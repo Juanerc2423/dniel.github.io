@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Investigación Científica</title>
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:linear-gradient(135deg,#0f172a,#111827,#083344);
+  color:white;
+  min-height:100vh;
+  padding:30px;
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+}
+
+header{
+  text-align:center;
+  padding:60px 20px;
+}
+
+header h1{
+  font-size:4rem;
+  margin-bottom:20px;
+}
+
+header p{
+  font-size:1.3rem;
+  color:#cbd5e1;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:25px;
+  margin-bottom:50px;
+}
+
+.card{
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(10px);
+  border-radius:30px;
+  overflow:hidden;
+  transition:0.3s;
+  box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+.card:hover{
+  transform:scale(1.05);
+}
+
+.card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.card-content{
+  padding:25px;
+}
+
+.card h2{
+  font-size:2rem;
+  margin-bottom:15px;
+}
+
+.card p{
+  color:#e2e8f0;
+  line-height:1.6;
+}
+
+.section{
+  background:rgba(255,255,255,0.08);
+  padding:40px;
+  border-radius:30px;
+  margin-bottom:50px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+.section h2{
+  text-align:center;
+  font-size:3rem;
+  margin-bottom:40px;
+}
+
+.steps{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.step{
+  background:#1e293b;
+  padding:25px;
+  border-radius:25px;
+  transition:0.3s;
+}
+
+.step:hover{
+  transform:scale(1.04);
+  background:#0891b2;
+}
+
+.step h3{
+  font-size:1.8rem;
+  margin-bottom:15px;
+}
+
+.step p{
+  line-height:1.6;
+}
+
+.button-section{
+  text-align:center;
+  margin-bottom:50px;
+}
+
+button{
+  background:#06b6d4;
+  color:black;
+  border:none;
+  padding:20px 40px;
+  font-size:1.2rem;
+  font-weight:bold;
+  border-radius:20px;
+  cursor:pointer;
+  transition:0.3s;
+  box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+button:hover{
+  transform:scale(1.08);
+  background:#67e8f9;
+}
+
+footer{
+  text-align:center;
+  color:#cbd5e1;
+  padding-bottom:20px;
+}
+
+@media(max-width:768px){
+
+  header h1{
+    font-size:2.8rem;
+  }
+
+  .section h2{
+    font-size:2.2rem;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+  <h1>Investigación Científica</h1>
+
+  <p>
+    Aprende sobre métodos, técnicas e instrumentos científicos.
+  </p>
+</header>
+
+<section class="cards">
+
+  <div class="card">
+
+    <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d" alt="Ciencia">
+
+    <div class="card-content">
+
+      <h2>Método Científico</h2>
+
+      <p>
+        El método científico es un proceso utilizado para investigar,
+        analizar y comprobar hipótesis mediante observación y experimentación.
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="card">
+
+    <img src="https://images.unsplash.com/photo-1581091870622-2c1f3c5b7d17" alt="Laboratorio">
+
+    <div class="card-content">
+
+      <h2>Instrumentos</h2>
+
+      <p>
+        Los instrumentos de investigación permiten recopilar datos como
+        encuestas, entrevistas, observaciones y experimentos.
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="card">
+
+    <img src="https://images.unsplash.com/photo-1532187643603-ba119ca4109e" alt="Tecnología">
+
+    <div class="card-content">
+
+      <h2>Tecnología</h2>
+
+      <p>
+        La tecnología facilita el análisis de datos, la comunicación y el
+        desarrollo de nuevos descubrimientos científicos.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="section">
+
+  <h2>Pasos de una Investigación</h2>
+
+  <div class="steps">
+
+    <div class="step">
+      <h3>1. Observación</h3>
+
+      <p>
+        Identificar un problema o fenómeno que necesita explicación.
+      </p>
+    </div>
+
+    <div class="step">
+      <h3>2. Hipótesis</h3>
+
+      <p>
+        Crear una posible respuesta basada en conocimientos previos.
+      </p>
+    </div>
+
+    <div class="step">
+      <h3>3. Experimentación</h3>
+
+      <p>
+        Realizar pruebas y recolectar información para analizar.
+      </p>
+    </div>
+
+    <div class="step">
+      <h3>4. Conclusión</h3>
+
+      <p>
+        Analizar resultados y comprobar si la hipótesis era correcta.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="button-section">
+
+  <button onclick="mostrarMensaje()">
+    Presiona para aprender
+  </button>
+
+</section>
+
+<footer>
+  <p>
+    Página interactiva creada en HTML, CSS y JavaScript.
+  </p>
+</footer>
+
+</div>
+
+<script>
+
+function mostrarMensaje(){
+  alert("La ciencia nos ayuda a comprender el mundo.");
+}
+
+</script>
+
+</body>
+</html>
